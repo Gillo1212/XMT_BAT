@@ -1,0 +1,31 @@
+export const mockLocataires = [
+  { id: 'LOC-001', nom: 'Serigne Mbaye', telephone: '+221 77 543 21 09', email: 'serigne.mbaye@gmail.com', nationalite: 'Sénégalaise', profession: 'Ingénieur', typeId: 'CNI', numeroId: 'SN-2019-00451', dateEntree: '2025-03-01', statut: 'Actif' },
+  { id: 'LOC-002', nom: 'Marie Dupont', telephone: '+33 6 12 34 56 78', email: 'marie.dupont@outlook.fr', nationalite: 'Française', profession: 'Consultante', typeId: 'Passeport', numeroId: 'FR-P-990012', dateEntree: '2025-06-15', statut: 'Actif' },
+  { id: 'LOC-003', nom: 'Alioune Badara Ndiaye', telephone: '+221 76 887 34 21', email: 'alioune.ndiaye@hotmail.com', nationalite: 'Sénégalaise', profession: 'Médecin', typeId: 'CNI', numeroId: 'SN-2021-11782', dateEntree: '2024-11-01', statut: 'Actif' },
+  { id: 'LOC-004', nom: 'Abou Diallo', telephone: '+221 70 234 56 78', email: 'abou.diallo@yahoo.fr', nationalite: 'Guinéenne', profession: 'Commerçant', typeId: 'Passeport', numeroId: 'GN-2020-8823', dateEntree: '2025-01-10', statut: 'Actif' },
+  { id: 'LOC-005', nom: 'Coumba Sarr', telephone: '+221 77 120 34 56', email: 'coumba.sarr@gmail.com', nationalite: 'Sénégalaise', profession: 'Enseignante', typeId: 'CNI', numeroId: 'SN-2022-34412', dateEntree: '2024-08-20', statut: 'Actif' },
+  { id: 'LOC-006', nom: 'Oumar Faye', telephone: '+221 78 456 12 34', email: 'oumar.faye@gmail.com', nationalite: 'Sénégalaise', profession: 'Entrepreneur', typeId: 'CNI', numeroId: 'SN-2018-78901', dateEntree: '2025-02-01', statut: 'Préavis' },
+  { id: 'LOC-007', nom: 'Ndeye Fall', telephone: '+221 77 890 23 45', email: 'ndeye.fall@gmail.com', nationalite: 'Sénégalaise', profession: 'Responsable RH', typeId: 'CNI', numeroId: 'SN-2020-22341', dateEntree: '2024-09-15', statut: 'Actif' },
+  { id: 'LOC-008', nom: 'Idrissa Kouyaté', telephone: '+221 76 345 67 89', email: 'idrissa.kouyate@gmail.com', nationalite: 'Malienne', profession: 'Architecte', typeId: 'Passeport', numeroId: 'ML-2021-5512', dateEntree: '2025-04-01', statut: 'Actif' },
+];
+
+export const mockContratsLocation = [
+  { id: 'CTR-L001', reference: 'XMT-CL001', locataireId: 'LOC-001', locataire: 'Serigne Mbaye', bien: 'Villa Almadies KA-12', typeContrat: 'Meublé', loyer: 650000, caution: 1300000, dateDebut: '2025-03-01', dateFin: '2026-03-01', duree: 12, statut: 'Actif', agentSuivi: 'Khalil Sarr', prochainLoyer: '2026-04-01' },
+  { id: 'CTR-L002', reference: 'XMT-CL002', locataireId: 'LOC-002', locataire: 'Marie Dupont', bien: 'Studio Mermoz Cauri', typeContrat: 'Meublé', loyer: 150000, caution: 300000, dateDebut: '2025-06-15', dateFin: '2026-06-15', duree: 12, statut: 'Actif', agentSuivi: 'Khalil Sarr', prochainLoyer: '2026-04-15' },
+  { id: 'CTR-L003', reference: 'XMT-CL003', locataireId: 'LOC-003', locataire: 'Alioune Badara Ndiaye', bien: 'Appartement Plateau', typeContrat: 'Non meublé', loyer: 280000, caution: 560000, dateDebut: '2024-11-01', dateFin: '2025-11-01', duree: 12, statut: 'Renouvellement', agentSuivi: 'Moussa Diallo', prochainLoyer: '2026-04-01' },
+  { id: 'CTR-L004', reference: 'XMT-CL004', locataireId: 'LOC-004', locataire: 'Abou Diallo', bien: 'Local commercial VDN', typeContrat: 'Commercial', loyer: 400000, caution: 800000, dateDebut: '2025-01-10', dateFin: '2026-01-10', duree: 12, statut: 'Actif', agentSuivi: 'Khalil Sarr', prochainLoyer: '2026-04-10' },
+  { id: 'CTR-L005', reference: 'XMT-CL005', locataireId: 'LOC-005', locataire: 'Coumba Sarr', bien: 'Appartement Les Mamelles', typeContrat: 'Non meublé', loyer: 350000, caution: 700000, dateDebut: '2024-08-20', dateFin: '2025-08-20', duree: 12, statut: 'Actif', agentSuivi: 'Moussa Diallo', prochainLoyer: '2026-04-20' },
+  { id: 'CTR-L006', reference: 'XMT-CL006', locataireId: 'LOC-006', locataire: 'Oumar Faye', bien: 'Bureau Point E', typeContrat: 'Bureau', loyer: 280000, caution: 560000, dateDebut: '2025-02-01', dateFin: '2026-02-01', duree: 12, statut: 'Préavis', agentSuivi: 'Khalil Sarr', prochainLoyer: '2026-04-01' },
+  { id: 'CTR-L007', reference: 'XMT-CL007', locataireId: 'LOC-007', locataire: 'Ndeye Fall', bien: 'Villa Sacré-Cœur 3', typeContrat: 'Meublé', loyer: 500000, caution: 1000000, dateDebut: '2024-09-15', dateFin: '2025-09-15', duree: 12, statut: 'Actif', agentSuivi: 'Moussa Diallo', prochainLoyer: '2026-04-15' },
+  { id: 'CTR-L008', reference: 'XMT-CL008', locataireId: 'LOC-008', locataire: 'Idrissa Kouyaté', bien: 'Villa Almadies KA-12', typeContrat: 'Meublé', loyer: 650000, caution: 1300000, dateDebut: '2025-04-01', dateFin: '2026-04-01', duree: 12, statut: 'Actif', agentSuivi: 'Khalil Sarr', prochainLoyer: '2026-05-01' },
+];
+
+export const mockLoyersLoyer = [
+  { id: 'LYR-001', contratRef: 'XMT-CL001', locataire: 'Serigne Mbaye', bien: 'Villa Almadies KA-12', mois: 'Mars 2026', montant: 650000, dateEcheance: '2026-03-01', datePaiement: '2026-03-02', statut: 'Payé', modePaiement: 'Virement' },
+  { id: 'LYR-002', contratRef: 'XMT-CL002', locataire: 'Marie Dupont', bien: 'Studio Mermoz Cauri', mois: 'Mars 2026', montant: 150000, dateEcheance: '2026-03-15', datePaiement: null, statut: 'En attente', modePaiement: null },
+  { id: 'LYR-003', contratRef: 'XMT-CL003', locataire: 'Alioune Badara Ndiaye', bien: 'Appartement Plateau', mois: 'Mars 2026', montant: 280000, dateEcheance: '2026-03-01', datePaiement: null, statut: 'En retard', modePaiement: null },
+  { id: 'LYR-004', contratRef: 'XMT-CL004', locataire: 'Abou Diallo', bien: 'Local commercial VDN', mois: 'Mars 2026', montant: 400000, dateEcheance: '2026-03-10', datePaiement: '2026-03-09', statut: 'Payé', modePaiement: 'Orange Money' },
+  { id: 'LYR-005', contratRef: 'XMT-CL005', locataire: 'Coumba Sarr', bien: 'Appartement Les Mamelles', mois: 'Mars 2026', montant: 350000, dateEcheance: '2026-03-20', datePaiement: '2026-03-18', statut: 'Payé', modePaiement: 'Chèque' },
+  { id: 'LYR-006', contratRef: 'XMT-CL006', locataire: 'Oumar Faye', bien: 'Bureau Point E', mois: 'Mars 2026', montant: 280000, dateEcheance: '2026-03-01', datePaiement: null, statut: 'En retard', modePaiement: null },
+  { id: 'LYR-007', contratRef: 'XMT-CL007', locataire: 'Ndeye Fall', bien: 'Villa Sacré-Cœur 3', mois: 'Mars 2026', montant: 500000, dateEcheance: '2026-03-15', datePaiement: '2026-03-15', statut: 'Payé', modePaiement: 'Wave' },
+];
